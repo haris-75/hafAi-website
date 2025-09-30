@@ -1,5 +1,7 @@
+import Home from "./Home";
+
 function App() {
-  return <p className="text-2xl">Hello</p>;
+  return <Home />;
 }
 
 export default App;
