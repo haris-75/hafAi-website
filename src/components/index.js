@@ -9,6 +9,7 @@ import TestimonialCard from "./TestimonialCard";
 import PricingCard from "./PricingCard";
 import BlogCard from "./BlogCard";
 import Footer from "./Footer";
+import CompanyLogo from "./CompanyLogo";
 
 export {
   GradientText,
@@ -22,4 +23,5 @@ export {
   PricingCard,
   BlogCard,
   Footer,
+  CompanyLogo,
 };

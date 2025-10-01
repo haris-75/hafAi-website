@@ -1,3 +1,4 @@
+import CompanyLogo from "./CompanyLogo";
 import Container from "./Container";
 
 const Footer = () => (
@@ -6,14 +7,8 @@ const Footer = () => (
       <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
         {/* Brand */}
         <div>
-          <a
-            href="#"
-            className="flex items-center gap-2 text-lg font-bold text-fg"
-          >
-            <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-primary text-primary-fg">
-              A
-            </span>
-            Agenzio
+          <a href="#">
+            <CompanyLogo />
           </a>
           <p className="mt-3 text-sm text-muted-fg">
             Creative partner for fast-moving teams.

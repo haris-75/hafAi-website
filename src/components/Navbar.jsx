@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X, ChevronRight, Sun, Moon } from "lucide-react";
 import Container from "./Container";
+import CompanyLogo from "./CompanyLogo";
 
 const Navbar = ({ onToggleTheme, theme }) => {
   const [open, setOpen] = useState(false);
@@ -22,14 +23,8 @@ const Navbar = ({ onToggleTheme, theme }) => {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-panel/80 backdrop-blur supports-[backdrop-filter]:bg-panel/100">
       <Container className="flex h-16 items-center justify-between">
-        <a
-          href="#"
-          className="flex items-center gap-2 text-xl font-bold tracking-tight text-fg"
-        >
-          <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-primary text-primary-fg shadow-sm">
-            A
-          </span>
-          Agenzio
+        <a href="#">
+          <CompanyLogo />
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
