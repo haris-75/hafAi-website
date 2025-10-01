@@ -47,7 +47,7 @@ const Navbar = ({ onToggleTheme, theme }) => {
         <div className="flex items-center gap-2">
           <button
             onClick={onToggleTheme}
-            className="inline-flex items-center gap-2 rounded-xl border border-border px-3 py-2 text-sm font-medium text-fg shadow-sm transition-all hover:shadow"
+            className="inline-flex items-center gap-2 rounded-xl border border-border px-3 py-2 text-sm font-medium text-fg shadow-sm transition-all hover:shadow cursor-pointer"
           >
             {theme === "dark" ? (
               <Sun className="h-4 w-4" />

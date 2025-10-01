@@ -49,15 +49,15 @@ const Hero = () => (
       </div>
 
       <div className="relative">
-        <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border bg-card shadow-xl">
+        <div className="aspect-[4/3] w-full overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1529336953121-ad5a0d43d0d2?q=80&w=1600&auto=format&fit=crop"
+            src="/hero.svg"
             alt="Hero preview"
             className="h-full w-full object-cover"
           />
         </div>
 
-        <button className="absolute bottom-6 left-6 inline-flex items-center gap-2 rounded-full bg-card/90 px-4 py-2 text-sm font-semibold text-fg shadow backdrop-blur hover:opacity-95">
+        <button className="absolute bottom-6 left-6 inline-flex items-center gap-2 rounded-full bg-card/90 px-4 py-2 text-sm font-semibold text-fg shadow backdrop-blur hover:opacity-95 cursor-pointer">
           <Play className="h-4 w-4" /> Watch Reel
         </button>
       </div>

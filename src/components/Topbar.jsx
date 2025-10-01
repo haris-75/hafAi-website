@@ -1,12 +1,5 @@
 import Container from "./Container";
-import {
-  Phone,
-  Mail,
-  Instagram,
-  Twitter,
-  Facebook,
-  Linkedin,
-} from "lucide-react";
+import { Phone, Mail, Instagram, Facebook, Linkedin } from "lucide-react";
 
 const Topbar = () => (
   <div className="hidden border-b border-border bg-panel/80 backdrop-blur supports-[backdrop-filter]:bg-panel/95 md:block">
@@ -26,13 +19,6 @@ const Topbar = () => (
         </a>
       </div>
       <div className="flex items-center gap-4 text-muted-fg">
-        <a
-          href="#"
-          aria-label="Twitter"
-          className="transition-opacity hover:opacity-80"
-        >
-          <Twitter className="h-4 w-4" />
-        </a>
         <a
           href="#"
           aria-label="Instagram"

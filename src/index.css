@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-/* Declare tokens in @theme so utilities like bg-{token}/80 work */
+/* Light theme base tokens */
 @theme {
-  /* Light theme */
+  /* ===== Neutrals (KEEP UNCHANGED) ===== */
   --color-bg: rgb(255 255 255);
   --color-fg: rgb(23 23 23);
 
@@ -10,7 +10,7 @@
   --color-muted-fg: rgb(115 115 115);
 
   --color-card: rgb(255 255 255);
-  --color-card-foreground: rgb(23 23 23); /* if you want a card-fg token */
+  --color-card-foreground: rgb(23 23 23);
 
   --color-border: rgb(230 230 230);
 
@@ -19,25 +19,26 @@
   --color-accent: rgb(244 244 245);
   --color-accent-foreground: rgb(23 23 23);
 
-  --color-primary: rgb(79 70 229); /* indigo-600-ish */
-  --color-primary-fg: rgb(255 255 255);
-
   --color-cta: rgb(23 23 23);
   --color-cta-fg: rgb(255 255 255);
 
   --color-warning: rgb(250 204 21);
 
-  /* Soft blobs / decorative */
-  --color-brand-soft: rgb(199 210 254);
-  --color-highlight-soft: rgb(240 171 252);
+  /* ===== ACTIVE ACCENT: TEAL (default) ===== */
+  --color-primary: rgb(20 184 166);
+  --color-primary-fg: rgb(255 255 255);
 
-  /* Gradient stops */
-  --color-gradient-from: rgb(99 102 241);
-  --color-gradient-via: rgb(139 92 246);
-  --color-gradient-to: rgb(217 70 239);
+  --color-brand-soft: rgb(153 246 228);
+  --color-highlight-soft: rgb(110 231 183);
+
+  --color-gradient-from: rgb(45 212 191);
+  --color-gradient-via: rgb(52 211 153);
+  --color-gradient-to: rgb(16 185 129);
+
+  /* ===== ACTIVE ACCENT: TEAL (default) ===== */
 }
 
-/* Dark theme override via class on <html> or <body> */
+/* Dark theme override */
 .dark {
   --color-bg: rgb(17 17 17);
   --color-fg: rgb(243 244 246);
@@ -55,13 +56,53 @@
   --color-accent: rgb(38 38 38);
   --color-accent-foreground: rgb(243 244 246);
 
-  --color-primary: rgb(99 102 241);
-  --color-primary-fg: rgb(255 255 255);
-
   --color-cta: rgb(255 255 255);
   --color-cta-fg: rgb(23 23 23);
 
   --color-warning: rgb(250 204 21);
+
+  /* ===== ACTIVE ACCENT: TEAL (default) ===== */
+  --color-primary: rgb(45 212 191);
+  --color-primary-fg: rgb(23 23 23);
+
+  --color-brand-soft: rgb(20 184 166);
+  --color-highlight-soft: rgb(52 211 153);
+
+  --color-gradient-from: rgb(45 212 191);
+  --color-gradient-via: rgb(16 185 129);
+  --color-gradient-to: rgb(34 197 94);
+
+  /* ===== ACTIVE ACCENT: TEAL (default) ===== */
+  body {
+    background-color: rgb(17 17 17);
+  }
+}
+
+/* ===================================================================
+   THEME PALETTE OPTIONS (COMMENTED)
+   -------------------------------------------------------------------
+   Copy the desired block into the ACTIVE ACCENT section above.
+   Light values go into @theme, Dark values go into .dark
+   =================================================================== */
+
+/* ---------------------------------------------------------------
+   INDIGO THEME (original)
+-------------------------------------------------------------------
+ */
+/* @theme {
+  --color-primary: rgb(79 70 229);
+  --color-primary-fg: rgb(255 255 255);
+
+  --color-brand-soft: rgb(199 210 254);
+  --color-highlight-soft: rgb(240 171 252);
+
+  --color-gradient-from: rgb(99 102 241);
+  --color-gradient-via: rgb(139 92 246);
+  --color-gradient-to: rgb(217 70 239);
+}
+.dark {
+  --color-primary: rgb(99 102 241);
+  --color-primary-fg: rgb(255 255 255);
 
   --color-brand-soft: rgb(99 102 241);
   --color-highlight-soft: rgb(217 70 239);
@@ -69,4 +110,86 @@
   --color-gradient-from: rgb(129 140 248);
   --color-gradient-via: rgb(167 139 250);
   --color-gradient-to: rgb(232 121 249);
+} */
+/*------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------
+   TEAL THEME
+-------------------------------------------------------------------*/
+/* @theme {
+  --color-primary: rgb(20 184 166);
+  --color-primary-fg: rgb(255 255 255);
+
+  --color-brand-soft: rgb(153 246 228);
+  --color-highlight-soft: rgb(110 231 183);
+
+  --color-gradient-from: rgb(45 212 191);
+  --color-gradient-via: rgb(52 211 153);
+  --color-gradient-to: rgb(16 185 129);
 }
+.dark {
+  --color-primary: rgb(45 212 191);
+  --color-primary-fg: rgb(23 23 23);
+
+  --color-brand-soft: rgb(20 184 166);
+  --color-highlight-soft: rgb(52 211 153);
+
+  --color-gradient-from: rgb(45 212 191);
+  --color-gradient-via: rgb(16 185 129);
+  --color-gradient-to: rgb(34 197 94);
+} */
+/*------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------
+   EMERALD / GREEN THEME
+-------------------------------------------------------------------*/
+/* @theme {
+  --color-primary: rgb(16 185 129);
+  --color-primary-fg: rgb(255 255 255);
+
+  --color-brand-soft: rgb(134 239 172);
+  --color-highlight-soft: rgb(187 247 208);
+
+  --color-gradient-from: rgb(34 197 94);
+  --color-gradient-via: rgb(16 185 129);
+  --color-gradient-to: rgb(5 150 105);
+}
+.dark {
+  --color-primary: rgb(34 197 94);
+  --color-primary-fg: rgb(23 23 23);
+
+  --color-brand-soft: rgb(16 185 129);
+  --color-highlight-soft: rgb(5 150 105);
+
+  --color-gradient-from: rgb(134 239 172);
+  --color-gradient-via: rgb(34 197 94);
+  --color-gradient-to: rgb(22 163 74);
+} */
+/*------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------
+   ROSE / CORAL THEME
+-------------------------------------------------------------------*/
+/* @theme {
+  --color-primary: rgb(244 63 94);
+  --color-primary-fg: rgb(255 255 255);
+
+  --color-brand-soft: rgb(254 205 211);
+  --color-highlight-soft: rgb(251 113 133);
+
+  --color-gradient-from: rgb(244 114 182);
+  --color-gradient-via: rgb(236 72 153);
+  --color-gradient-to: rgb(219 39 119);
+}
+.dark {
+  --color-primary: rgb(251 113 133);
+  --color-primary-fg: rgb(23 23 23);
+
+  --color-brand-soft: rgb(244 63 94);
+  --color-highlight-soft: rgb(225 29 72);
+
+  --color-gradient-from: rgb(244 114 182);
+  --color-gradient-via: rgb(236 72 153);
+  --color-gradient-to: rgb(219 39 119);
+} */
+/*------------------------------------------------------------------- */
