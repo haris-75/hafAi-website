@@ -12,10 +12,11 @@ import Pricing from "./pages/Pricing";
 import Blog from "./pages/Blog";
 
 export default function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   useEffect(() => {
-    if (theme === "dark") document.documentElement.classList.add("dark");
-    else document.documentElement.classList.remove("dark");
+    const el = document.documentElement; // <html>
+    if (theme === "dark") el.classList.add("dark");
+    else el.classList.remove("dark");
   }, [theme]);
 
   return (

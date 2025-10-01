@@ -1,17 +1,19 @@
 import { Container } from "../components";
 
 const Clients = () => (
-  <section className="border-y bg-neutral-50 dark:bg-neutral-900/40 dark:border-neutral-800">
+  <section className="border-y border-border bg-muted text-fg">
     <Container className="py-8">
-      <p className="mb-6 text-center text-sm uppercase tracking-widest text-neutral-500">
+      <p className="mb-6 text-center text-sm uppercase tracking-widest text-muted-fg">
         We’ve worked with teams at
       </p>
+
       <div className="grid grid-cols-2 items-center gap-6 opacity-70 sm:grid-cols-3 md:grid-cols-6">
         {["Shopify", "Notion", "Figma", "Framer", "Stripe", "GitHub"].map(
           (c) => (
             <div
               key={c}
-              className="flex items-center justify-center rounded-xl bg-white p-4 shadow-sm ring-1 ring-neutral-100 dark:bg-neutral-900 dark:ring-neutral-800"
+              className="flex items-center justify-center rounded-xl bg-card p-4 shadow-sm ring-1 ring-border transition
+           hover:shadow-md hover:bg-accent"
             >
               <span className="text-sm font-semibold">{c}</span>
             </div>

@@ -1,1 +1,72 @@
 @import "tailwindcss";
+
+/* Declare tokens in @theme so utilities like bg-{token}/80 work */
+@theme {
+  /* Light theme */
+  --color-bg: rgb(255 255 255);
+  --color-fg: rgb(23 23 23);
+
+  --color-muted: rgb(245 245 245);
+  --color-muted-fg: rgb(115 115 115);
+
+  --color-card: rgb(255 255 255);
+  --color-card-foreground: rgb(23 23 23); /* if you want a card-fg token */
+
+  --color-border: rgb(230 230 230);
+
+  --color-panel: rgb(255 255 255);
+
+  --color-accent: rgb(244 244 245);
+  --color-accent-foreground: rgb(23 23 23);
+
+  --color-primary: rgb(79 70 229); /* indigo-600-ish */
+  --color-primary-fg: rgb(255 255 255);
+
+  --color-cta: rgb(23 23 23);
+  --color-cta-fg: rgb(255 255 255);
+
+  --color-warning: rgb(250 204 21);
+
+  /* Soft blobs / decorative */
+  --color-brand-soft: rgb(199 210 254);
+  --color-highlight-soft: rgb(240 171 252);
+
+  /* Gradient stops */
+  --color-gradient-from: rgb(99 102 241);
+  --color-gradient-via: rgb(139 92 246);
+  --color-gradient-to: rgb(217 70 239);
+}
+
+/* Dark theme override via class on <html> or <body> */
+.dark {
+  --color-bg: rgb(17 17 17);
+  --color-fg: rgb(243 244 246);
+
+  --color-muted: rgb(38 38 38);
+  --color-muted-fg: rgb(163 163 163);
+
+  --color-card: rgb(23 23 23);
+  --color-card-foreground: rgb(243 244 246);
+
+  --color-border: rgb(64 64 64);
+
+  --color-panel: rgb(24 24 27);
+
+  --color-accent: rgb(38 38 38);
+  --color-accent-foreground: rgb(243 244 246);
+
+  --color-primary: rgb(99 102 241);
+  --color-primary-fg: rgb(255 255 255);
+
+  --color-cta: rgb(255 255 255);
+  --color-cta-fg: rgb(23 23 23);
+
+  --color-warning: rgb(250 204 21);
+
+  --color-brand-soft: rgb(99 102 241);
+  --color-highlight-soft: rgb(217 70 239);
+
+  --color-gradient-from: rgb(129 140 248);
+  --color-gradient-via: rgb(167 139 250);
+  --color-gradient-to: rgb(232 121 249);
+}

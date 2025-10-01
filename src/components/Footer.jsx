@@ -1,76 +1,106 @@
 import Container from "./Container";
 
 const Footer = () => (
-  <footer className="border-t bg-white dark:bg-neutral-900 dark:border-neutral-800">
+  <footer className="border-t border-border bg-bg">
     <Container className="py-10">
       <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Brand */}
         <div>
-          <a href="#" className="flex items-center gap-2 text-lg font-bold">
-            <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-600 text-white">
+          <a
+            href="#"
+            className="flex items-center gap-2 text-lg font-bold text-fg"
+          >
+            <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-primary text-primary-fg">
               A
             </span>
             Agenzio
           </a>
-          <p className="mt-3 text-sm text-neutral-600 dark:text-neutral-300">
-            Creative partner for fast‑moving teams.
+          <p className="mt-3 text-sm text-muted-fg">
+            Creative partner for fast-moving teams.
           </p>
         </div>
+
+        {/* Company */}
         <div>
-          <h4 className="text-sm font-semibold">Company</h4>
-          <ul className="mt-3 grid gap-2 text-sm text-neutral-600 dark:text-neutral-300">
+          <h4 className="text-sm font-semibold text-fg">Company</h4>
+          <ul className="mt-3 grid gap-2 text-sm text-muted-fg">
             <li>
-              <a href="#about" className="hover:underline">
+              <a
+                href="#about"
+                className="hover:underline text-fg/90 hover:text-fg"
+              >
                 About
               </a>
             </li>
             <li>
-              <a href="#works" className="hover:underline">
+              <a
+                href="#works"
+                className="hover:underline text-fg/90 hover:text-fg"
+              >
                 Work
               </a>
             </li>
             <li>
-              <a href="#blog" className="hover:underline">
+              <a
+                href="#blog"
+                className="hover:underline text-fg/90 hover:text-fg"
+              >
                 Blog
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:underline">
+              <a
+                href="#contact"
+                className="hover:underline text-fg/90 hover:text-fg"
+              >
                 Contact
               </a>
             </li>
           </ul>
         </div>
+
+        {/* Services */}
         <div>
-          <h4 className="text-sm font-semibold">Services</h4>
-          <ul className="mt-3 grid gap-2 text-sm text-neutral-600 dark:text-neutral-300">
+          <h4 className="text-sm font-semibold text-fg">Services</h4>
+          <ul className="mt-3 grid gap-2 text-sm text-muted-fg">
             <li>Brand Strategy</li>
             <li>UI/UX Design</li>
             <li>Web Development</li>
             <li>Growth & Analytics</li>
           </ul>
         </div>
+
+        {/* Newsletter */}
         <div>
-          <h4 className="text-sm font-semibold">Newsletter</h4>
-          <p className="mt-3 text-sm text-neutral-600 dark:text-neutral-300">
+          <h4 className="text-sm font-semibold text-fg">Newsletter</h4>
+          <p className="mt-3 text-sm text-muted-fg">
             Get monthly insights and updates.
           </p>
           <div className="mt-3 flex items-center gap-2">
             <input
-              className="w-full rounded-xl border px-3 py-2 text-sm outline-none transition focus:ring-2 focus:ring-indigo-500 dark:border-neutral-700 dark:bg-neutral-950"
+              className="w-full rounded-xl border border-border bg-accent px-3 py-2 text-sm text-fg placeholder:text-muted-fg/70 outline-none transition focus:ring-2 focus:ring-primary"
               placeholder="you@company.com"
             />
-            <button className="rounded-xl bg-neutral-900 px-4 py-2 text-sm font-semibold text-white dark:bg-white dark:text-neutral-900">
+            <button className="rounded-xl bg-cta px-4 py-2 text-sm font-semibold text-cta-fg">
               Join
             </button>
           </div>
         </div>
       </div>
-      <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t pt-6 text-sm text-neutral-500 dark:border-neutral-800 md:flex-row">
+
+      {/* Bottom bar */}
+      <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-border pt-6 text-sm text-muted-fg md:flex-row">
         <p>© {new Date().getFullYear()} Agenzio. All rights reserved.</p>
         <div className="flex items-center gap-4">
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="#">Cookies</a>
+          <a href="#" className="hover:underline hover:text-fg">
+            Privacy
+          </a>
+          <a href="#" className="hover:underline hover:text-fg">
+            Terms
+          </a>
+          <a href="#" className="hover:underline hover:text-fg">
+            Cookies
+          </a>
         </div>
       </div>
     </Container>

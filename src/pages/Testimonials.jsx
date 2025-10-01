@@ -1,16 +1,17 @@
 import { Container, TestimonialCard } from "../components";
 
 const Testimonials = () => (
-  <section className="border-y bg-neutral-50 py-16 dark:bg-neutral-900/40 dark:border-neutral-800 lg:py-24">
+  <section className="border-y border-border bg-muted py-16 lg:py-24">
     <Container>
       <div className="mx-auto max-w-2xl text-center">
-        <p className="text-xs font-semibold uppercase tracking-widest text-indigo-600">
+        <p className="text-xs font-semibold uppercase tracking-widest text-primary">
           Social proof
         </p>
-        <h2 className="mt-2 text-3xl font-black sm:text-4xl">
+        <h2 className="mt-2 text-3xl font-black text-fg sm:text-4xl">
           What clients say
         </h2>
       </div>
+
       <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <TestimonialCard
           quote="The team nailed our rebrand and web launch ahead of schedule."
@@ -18,7 +19,7 @@ const Testimonials = () => (
           role="CMO, Flux"
         />
         <TestimonialCard
-          quote="Pixel‑perfect execution and excellent communication."
+          quote="Pixel-perfect execution and excellent communication."
           author="Priya Patel"
           role="Founder, Senda"
         />
