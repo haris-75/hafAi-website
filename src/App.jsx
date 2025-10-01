@@ -8,8 +8,8 @@ import About from "./pages/About";
 import Works from "./pages/Works";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
-import Pricing from "./pages/Pricing";
-import Blog from "./pages/Blog";
+// import Pricing from "./pages/Pricing";
+// import Blog from "./pages/Blog";
 
 export default function App() {
   const [theme, setTheme] = useState("dark");
@@ -33,8 +33,8 @@ export default function App() {
         <About />
         <Works />
         <Testimonials />
-        <Pricing />
-        <Blog />
+        {/* <Pricing />
+        <Blog /> */}
         <Contact />
       </main>
       <Footer />

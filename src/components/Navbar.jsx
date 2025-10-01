@@ -9,8 +9,8 @@ const Navbar = ({ onToggleTheme, theme }) => {
     { href: "#services", label: "Services" },
     { href: "#works", label: "Work" },
     { href: "#about", label: "About" },
-    { href: "#pricing", label: "Pricing" },
-    { href: "#blog", label: "Blog" },
+    // { href: "#pricing", label: "Pricing" },
+    // { href: "#blog", label: "Blog" },
     { href: "#contact", label: "Contact" },
   ];
 

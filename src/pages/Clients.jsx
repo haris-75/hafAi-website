@@ -1,4 +1,5 @@
 import { Container } from "../components";
+import { clients } from "../constants";
 
 const Clients = () => (
   <section className="border-y border-border bg-muted text-fg">
@@ -8,17 +9,15 @@ const Clients = () => (
       </p>
 
       <div className="grid grid-cols-2 items-center gap-6 opacity-70 sm:grid-cols-3 md:grid-cols-6">
-        {["Shopify", "Notion", "Figma", "Framer", "Stripe", "GitHub"].map(
-          (c) => (
-            <div
-              key={c}
-              className="flex items-center justify-center rounded-xl bg-card p-4 shadow-sm ring-1 ring-border transition
+        {clients.map((c) => (
+          <div
+            key={c}
+            className="flex items-center justify-center rounded-xl bg-card p-4 shadow-sm ring-1 ring-border transition
            hover:shadow-md hover:bg-accent"
-            >
-              <span className="text-sm font-semibold">{c}</span>
-            </div>
-          )
-        )}
+          >
+            <span className="text-sm font-semibold">{c}</span>
+          </div>
+        ))}
       </div>
     </Container>
   </section>

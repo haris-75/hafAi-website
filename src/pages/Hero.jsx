@@ -15,12 +15,12 @@ const Hero = () => (
         </p>
 
         <h1 className="text-4xl font-black leading-tight text-fg sm:text-5xl lg:text-6xl">
-          We craft <GradientText>brands</GradientText> that people remember.
+          We build intelligent <GradientText>systems</GradientText> that scale.
         </h1>
 
         <p className="mt-4 max-w-2xl text-muted-fg">
-          Strategy, design, and development for ambitious teams. From identity
-          to web, we build delightful products that convert.
+          From chatbots to full-stack apps, we deliver AI-driven solutions that
+          automate, optimize, and grow your business.
         </p>
 
         <div className="mt-6 flex flex-col gap-3 sm:flex-row">

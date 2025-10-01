@@ -1,5 +1,5 @@
 import { ServiceCard, Container } from "../components";
-import { Rocket, Palette, Code2, LineChart } from "lucide-react";
+import { services } from "../constants";
 
 const Services = () => (
   <section id="services" className="py-16 lg:py-24 bg-bg">
@@ -18,26 +18,14 @@ const Services = () => (
       </div>
 
       <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <ServiceCard
-          icon={Rocket}
-          title="Brand Strategy"
-          desc="Positioning, messaging, and identity systems that resonate."
-        />
-        <ServiceCard
-          icon={Palette}
-          title="UI/UX Design"
-          desc="Human-centered design for web and mobile products."
-        />
-        <ServiceCard
-          icon={Code2}
-          title="Web Development"
-          desc="High-performance sites & apps with modern stacks."
-        />
-        <ServiceCard
-          icon={LineChart}
-          title="Growth & Analytics"
-          desc="Data-driven funnels, SEO, and conversion optimization."
-        />
+        {services.map((service, idx) => (
+          <ServiceCard
+            key={idx}
+            icon={service.icon}
+            title={service.title}
+            desc={service.desc}
+          />
+        ))}
       </div>
     </Container>
   </section>
